@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+env/
+*.log
+
+# Flask / dotenv
+.env
+
+# PyCharm
+.idea/
+shelf/
+workspace.xml
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# MongoDB
+dump/
+*.bson

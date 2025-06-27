@@ -1,0 +1,118 @@
+/* Layout structure */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.container {
+    flex: 1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08);
+}
+
+/* Inputs and Buttons */
+.form-control, .btn {
+    border-radius: 6px;
+}
+
+.btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0.25rem 0.75rem rgba(13, 110, 253, 0.25);
+}
+
+/* Highlight short URL */
+#short-url {
+    font-weight: 600;
+    color: #0d6efd;
+    background-color: #f1f9ff;
+    border: 1px solid #cce5ff;
+}
+
+/* Table Enhancements */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.table thead th {
+    background-color: #e9ecef;
+    font-weight: 600;
+}
+
+/* Truncated text styling */
+.text-truncate {
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Tooltip fix */
+[data-bs-toggle="tooltip"] {
+    cursor: pointer;
+}
+
+/* Flash messages (if using Flask flashing) */
+.alert {
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+/* Form spacing on mobile */
+@media (max-width: 576px) {
+    .form-control, .btn {
+        font-size: 0.95rem;
+    }
+}
+
+.navbar {
+    font-size: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    margin-left: 0.75rem;
+    font-weight: 500;
+    color: #333 !important;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #0d6efd !important;
+    border-bottom: 2px solid #0d6efd;
+}
+
+footer {
+    font-size: 0.85rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}

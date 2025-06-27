@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+    <h2>Edit URL</h2>
+    <form method="POST" action="{{ url_for('views.update_url', short_code=url_data.short_code) }}">
+        <div class="mb-3">
+            <label class="form-label">Original URL</label>
+            <input type="url" name="url" class="form-control" value="{{ url_data.url }}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+        <a href="{{ url_for('views.dashboard') }}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}
