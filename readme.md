@@ -1,8 +1,9 @@
-# URL Shortener Service
+# URL Shortener Service  
 
-A RESTful API for URL shortening built with Flask and MongoDB. 
-This service allows users to shorten long URLs, manage them through CRUD operations, and track access statistics. 
-Includes an optional minimal frontend for easy interaction.
+Project URL: https://roadmap.sh/projects/url-shortening-service  
+A simple URL shortening service built with Flask and MongoDB. Offers a RESTful API to create, manage, and track short URLs, along with a minimalist Bootstrap-powered frontend. 
+Perfect for learning backend APIs, database integration, and frontend templating with Flask. 
+Includes click statistics, custom short codes, and a clean responsive UI.
 
 ---
 
