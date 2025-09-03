@@ -21,3 +21,6 @@ Thumbs.db
 # MongoDB
 dump/
 *.bson
+
+# Firebase key
+url-shortner-36fa2-firebase-adminsdk-fbsvc-dae0667182.json
